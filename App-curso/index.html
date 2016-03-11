@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/opcoesDaPagina.css">
+  <link rel="stylesheet" href="css/cartao.css">
+  <link rel="stylesheet" href="css/novoCartao.css">
+  <link rel="stylesheet" href="css/botaoSync.css">
+  <link rel="stylesheet" href="css/mural.css">
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <title>Bloco de notas Ceep</title>
+</head>
+<body>
+  <header class="cabecalho container">
+    <h1 class="cabecalho-logo">Ceep</h1>
+    <div class="opcoesDaPagina">
+      <button id="sync" class="opcoesDaPagina-botao botaoSync">
+        <svg height="1em" viewBox="0 0 384 384">
+      	  <title>sincronizar</title>
+      	  <path d="M327.731 172.734c5.938 40.859-6.531 83.891-38.406 115.297-47.094 46.469-119.75 52.188-173.188 17.281l37.438-36.5-137.595-19.188 19.203 134.375 42.015-40.25c75.453 55.625 182.469 50.375 251.032-17.281 39.75-39.219 57.875-91.281 55.625-142.656l-56.125-11.078zM94.73 96.031c47.078-46.469 119.719-52.219 173.156-17.281l-37.5 36.484 137.594 19.203-19.188-134.438-41.969 40.344c-75.469-55.672-182.453-50.359-251.031 17.281-39.75 39.203-57.859 91.266-55.625 142.625l56.125 11.063c-5.938-40.875 6.563-83.859 38.438-115.281z"></path>
+        </svg>
+      </button>
+      <button id="ajuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">?</button>
+      <input type="search" id="busca" placeholder="busca" class="opcoesDaPagina-opcoes">
+      <buttom id="mudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao">Linhas</buttom>
+    </div>
+  </header>
+  <form class="novoCartao container">
+    <textarea class="novoCartao-conteudo" name="novoCartao-conteudo" placeholder="Escreva um novo cartao"></textarea>
+    <input class="novoCartao-salvar" type="submit" value="Salvar">
+  </form>
+  <section class="container mural">
+    <div class="cartao" id="cartao_1">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove" data-ref="1">
+          remover
+        </button>
+      </div>
+        <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    </div>
+    <div class="cartao" id="cartao_2">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove" data-ref="2">
+          <svg height="1em" viewBox="0 0 512 512">
+            <title>remover</title>
+          	<path fill="rgba(0,0,0,.5)" d="M507.331 411.33c-0.002-0.002-0.004-0.004-0.006-0.005l-155.322-155.325 155.322-155.325c0.002-0.002 0.004-0.003 0.006-0.005 1.672-1.673 2.881-3.627 3.656-5.708 2.123-5.688 0.912-12.341-3.662-16.915l-73.373-73.373c-4.574-4.573-11.225-5.783-16.914-3.66-2.080 0.775-4.035 1.984-5.709 3.655 0 0.002-0.002 0.003-0.004 0.005l-155.324 155.326-155.324-155.325c-0.002-0.002-0.003-0.003-0.005-0.005-1.673-1.671-3.627-2.88-5.707-3.655-5.69-2.124-12.341-0.913-16.915 3.66l-73.374 73.374c-4.574 4.574-5.784 11.226-3.661 16.914 0.776 2.080 1.985 4.036 3.656 5.708 0.002 0.001 0.003 0.003 0.005 0.005l155.325 155.324-155.325 155.326c-0.001 0.002-0.003 0.003-0.004 0.005-1.671 1.673-2.88 3.627-3.657 5.707-2.124 5.688-0.913 12.341 3.661 16.915l73.374 73.373c4.575 4.574 11.226 5.784 16.915 3.661 2.080-0.776 4.035-1.985 5.708-3.656 0.001-0.002 0.003-0.003 0.005-0.005l155.324-155.325 155.324 155.325c0.002 0.001 0.004 0.003 0.006 0.004 1.674 1.672 3.627 2.881 5.707 3.657 5.689 2.123 12.342 0.913 16.914-3.661l73.373-73.374c4.574-4.574 5.785-11.227 3.662-16.915-0.776-2.080-1.985-4.034-3.657-5.707z"></path>
+          </svg>
+        </button>
+      </div>
+        <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    </div>
+    <div class="cartao" id="cartao_3">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove" data-ref="3">
+          <svg height="1em" viewBox="0 0 512 512">
+            <title>remover</title>
+          	<path fill="rgba(0,0,0,.5)" d="M507.331 411.33c-0.002-0.002-0.004-0.004-0.006-0.005l-155.322-155.325 155.322-155.325c0.002-0.002 0.004-0.003 0.006-0.005 1.672-1.673 2.881-3.627 3.656-5.708 2.123-5.688 0.912-12.341-3.662-16.915l-73.373-73.373c-4.574-4.573-11.225-5.783-16.914-3.66-2.080 0.775-4.035 1.984-5.709 3.655 0 0.002-0.002 0.003-0.004 0.005l-155.324 155.326-155.324-155.325c-0.002-0.002-0.003-0.003-0.005-0.005-1.673-1.671-3.627-2.88-5.707-3.655-5.69-2.124-12.341-0.913-16.915 3.66l-73.374 73.374c-4.574 4.574-5.784 11.226-3.661 16.914 0.776 2.080 1.985 4.036 3.656 5.708 0.002 0.001 0.003 0.003 0.005 0.005l155.325 155.324-155.325 155.326c-0.001 0.002-0.003 0.003-0.004 0.005-1.671 1.673-2.88 3.627-3.657 5.707-2.124 5.688-0.913 12.341 3.661 16.915l73.374 73.373c4.575 4.574 11.226 5.784 16.915 3.661 2.080-0.776 4.035-1.985 5.708-3.656 0.001-0.002 0.003-0.003 0.005-0.005l155.324-155.325 155.324 155.325c0.002 0.001 0.004 0.003 0.006 0.004 1.674 1.672 3.627 2.881 5.707 3.657 5.689 2.123 12.342 0.913 16.914-3.661l73.373-73.374c4.574-4.574 5.785-11.227 3.662-16.915-0.776-2.080-1.985-4.034-3.657-5.707z"></path>
+          </svg>
+        </button>
+      </div>
+        <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    </div>
+    <div class="cartao" id="cartao_4">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove" data-ref="4">
+          <svg height="1em" viewBox="0 0 512 512">
+            <title>remove</title>
+          	<path fill="rgba(0,0,0,.5)" d="M507.331 411.33c-0.002-0.002-0.004-0.004-0.006-0.005l-155.322-155.325 155.322-155.325c0.002-0.002 0.004-0.003 0.006-0.005 1.672-1.673 2.881-3.627 3.656-5.708 2.123-5.688 0.912-12.341-3.662-16.915l-73.373-73.373c-4.574-4.573-11.225-5.783-16.914-3.66-2.080 0.775-4.035 1.984-5.709 3.655 0 0.002-0.002 0.003-0.004 0.005l-155.324 155.326-155.324-155.325c-0.002-0.002-0.003-0.003-0.005-0.005-1.673-1.671-3.627-2.88-5.707-3.655-5.69-2.124-12.341-0.913-16.915 3.66l-73.374 73.374c-4.574 4.574-5.784 11.226-3.661 16.914 0.776 2.080 1.985 4.036 3.656 5.708 0.002 0.001 0.003 0.003 0.005 0.005l155.325 155.324-155.325 155.326c-0.001 0.002-0.003 0.003-0.004 0.005-1.671 1.673-2.88 3.627-3.657 5.707-2.124 5.688-0.913 12.341 3.661 16.915l73.374 73.373c4.575 4.574 11.226 5.784 16.915 3.661 2.080-0.776 4.035-1.985 5.708-3.656 0.001-0.002 0.003-0.003 0.005-0.005l155.324-155.325 155.324 155.325c0.002 0.001 0.004 0.003 0.006 0.004 1.674 1.672 3.627 2.881 5.707 3.657 5.689 2.123 12.342 0.913 16.914-3.661l73.373-73.374c4.574-4.574 5.785-11.227 3.662-16.915-0.776-2.080-1.985-4.034-3.657-5.707z"></path>
+          </svg>
+        </button>
+      </div>
+        <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+    </div>
+  </section>
+  <script src="js/jquery.js" ></script>
+  <script src="js/mudaLayout.js"></script>
+  <script src="js/busca.js"></script>
+  <script src="js/novoCartao.js"></script>
+  <script src="js/ajuda.js"></script>
+  <script src="js/sincronizacao.js"></script>
+  <script src="js/controladorDeCartoes.js"></script>
+</body>
+</html>
